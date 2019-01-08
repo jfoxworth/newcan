@@ -19,7 +19,7 @@
 
 				<div class="col_half col_last tright">
 					<div class="fright clearfix">
-						<a href="#" class="social-icon si-small si-borderless si-facebook">
+						<a href="https://www.facebook.com/groups/273734633206410/" class="social-icon si-small si-borderless si-facebook">
 							<i class="icon-facebook"></i>
 							<i class="icon-facebook"></i>
 						</a>
@@ -29,7 +29,7 @@
 							<i class="icon-twitter"></i>
 						</a>
 
-						<a href="#" class="social-icon si-small si-borderless si-twitter">
+						<a href="#" class="social-icon si-small si-borderless si-reddit">
 							<i class="icon-reddit"></i>
 							<i class="icon-reddit"></i>
 						</a>
