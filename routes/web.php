@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.welcome');
+});
+
+
+Route::get('/Issues', function () {
+    return view('layouts.issues');
+});
+
+
+Route::get('/JoinUs', function () {
+    return view('layouts.register');
+});
+
+
+Route::get('/Register', function () {
+    return view('layouts.register');
 });
