@@ -17,7 +17,7 @@ class UserController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    public function addme($data)
+    public function addme(array $data)
     {
     	var_dump($data);
         return;
