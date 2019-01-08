@@ -16,6 +16,7 @@
 						<p>Our initial efforts are being focused on the south east section of Texas, so there will be in person meetups in that section. However, we will allocate resources where necessary and available. You can also join us on facebook and twitter to keep up with local events.</p>
 
 						<form id="register-form" name="register-form" class="nobottommargin" action="#" method="post">
+							@csrf
 
 							<div class="col_half">
 								<label for="register-form-name">First Name:</label>
