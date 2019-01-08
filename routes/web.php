@@ -31,4 +31,4 @@ Route::get('/Register', function () {
 });
 
 
-Route::post('/JoinUs', '/Auth/RegisterController@create');
+Route::post('/JoinUs', '/RegisterController@create');
