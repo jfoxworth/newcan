@@ -29,7 +29,7 @@ return [
     */
 
     'fetch' => PDO::FETCH_CLASS,
-    
+
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
@@ -83,20 +83,20 @@ return [
         ],
 
 
-/*
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => $url["host"],
             'port' => env('DB_PORT', '5432'),
-            'database' => $url["user"],
-            'username' => env('DB_USERNAME', 'forge'),
+            'database' => substr($url["path"], 1),
+            'username' => $url["user"],
             'password' => $url["pass"],
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-*/
+
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
