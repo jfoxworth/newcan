@@ -29,3 +29,6 @@ Route::get('/JoinUs', function () {
 Route::get('/Register', function () {
     return view('layouts.register');
 });
+
+
+Route::post('/JoinUs', 'RegisterController@create');
