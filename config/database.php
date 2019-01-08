@@ -69,7 +69,7 @@ return [
         ],
 
 
-
+/*
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => $url["host"],
@@ -82,7 +82,7 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
+*/
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
