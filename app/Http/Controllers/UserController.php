@@ -17,9 +17,9 @@ class UserController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    public function addme(array $data)
+    public function addme()
     {
-    	var_dump($data);
+    	var_dump($thisItem = Input::get('register-form-firstname'));
         return;
     }
 
