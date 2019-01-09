@@ -92,7 +92,13 @@ class UserController extends Controller
     		$notask = 1;
     	} 
 
+		echo('++++++++');
 		echo($phonebank);
+		echo('--------');
+		echo($blockwalk);
+		echo('--------');
+		echo($othertask);
+		echo('--------');
 
     	return;
 
