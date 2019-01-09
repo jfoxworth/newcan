@@ -51,7 +51,15 @@ class UserController extends Controller
 	{
 
 		$data = Input::all();
-		
+
+		echo('--------');
+		echo($data['register-form-phonebank']);
+		echo('--------');
+		echo(isset($data['register-form-phonebank']));
+		echo('--------');
+		echo(!isset($data['register-form-phonebank']));
+		echo('--------');
+
 		if ( ! isset( $data['register-form-phonebank'] ) )
 		{
     		$phonebank = 0;
