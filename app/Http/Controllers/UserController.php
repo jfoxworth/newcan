@@ -62,7 +62,7 @@ class UserController extends Controller
 			"phonebank"   => Input::get('register-form-phonebank'),
 			"blockwalk"   => Input::get('register-form-blockwalk'),
 			"othertask"   => Input::get('register-form-othertask'),
-			"notask"   => Input::get('register-form-notask'));
+			"notask"   => Input::get('register-form-notask')));
 
 		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
