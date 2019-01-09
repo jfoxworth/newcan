@@ -68,28 +68,28 @@ class UserController extends Controller
     		$phonebank = 0;
     	} 
 
-		if ( ! isset( $data['register-form-blockwalk'] ) )
+		if ( ! isset( $data['register-form-blockwalk'] ) == 1 )
 		{
-    		$blockwalk = 0;
-    	}else
-    	{
     		$blockwalk = 1;
-    	} 
-
-		if ( ! isset( $data['register-form-othertask'] ) )
-		{
-    		$othertask = 0;
     	}else
     	{
+    		$blockwalk = 0;
+    	} 
+
+		if ( ! isset( $data['register-form-othertask'] ) == 1 )
+		{
     		$othertask = 1;
-    	} 
-
-		if ( ! isset( $data['register-form-notask'] ) )
-		{
-    		$notask = 0;
     	}else
     	{
+    		$othertask = 0;
+    	} 
+
+		if ( ! isset( $data['register-form-notask'] ) == 1 )
+		{
     		$notask = 1;
+    	}else
+    	{
+    		$notask = 0;
     	} 
 
 		echo('++++++++');
