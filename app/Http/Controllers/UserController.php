@@ -66,6 +66,13 @@ class UserController extends Controller
 			"notask"   => Input::get('register-form-notask')
 		);
 
+		$messages = [
+		    'required' => 'The :attribute field is required.',
+		    'max' => 'The :attribute field was too long',
+		    'min' => 'The :attribute field was not long enough',
+		    'unique' => 'That :attribute already exists',
+		];
+
 
 		Validator::make($regData, [
 			'firstname' => 'required|string|max:255',
@@ -75,7 +82,7 @@ class UserController extends Controller
 			'address' => 'required|string|max:255',
 			'state' => 'required|string|max:255',
 			'zipcode' => 'required|string|min:5|max:10'
-		])->validate();
+		], $messages)->validate();
 
 
 		return; 
