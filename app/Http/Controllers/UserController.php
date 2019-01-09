@@ -51,18 +51,6 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		var_dump(array (
-			"firstname"  => Input::get('register-form-firstname'),
-			"lastname" => Input::get('register-form-lastname'),
-			"email"   => Input::get('register-form-email'),
-			"phone"   => Input::get('register-form-phone'),
-			"address"   => Input::get('register-form-address'),
-			"zipcode"   => Input::get('register-form-zipcode'),
-			"state"   => Input::get('register-form-state'),
-			"phonebank"   => Input::get('register-form-phonebank'),
-			"blockwalk"   => Input::get('register-form-blockwalk'),
-			"othertask"   => Input::get('register-form-othertask'),
-			"notask"   => Input::get('register-form-notask')));
 
 		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
@@ -78,7 +66,7 @@ class UserController extends Controller
 			"notask"   => Input::get('register-form-notask')
 		);
 
-		return Validator::make($regData, [
+		var_dump(Validator::make($regData, [
 			'firstname' => 'required|string|max:255',
 			'lastname' => 'required|string|max:255',
 			'email' => 'required|string|email|max:255|unique:users',
@@ -86,7 +74,9 @@ class UserController extends Controller
 			'address' => 'required|string|max:255',
 			'state' => 'required|string|max:255',
 			'zipcode' => 'required|string|min:5|max:10'
-		]);
+		]));
+
+		return; 
 	}
 
 
