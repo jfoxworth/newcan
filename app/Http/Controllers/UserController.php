@@ -50,7 +50,7 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		if ( ! isset( Input::get('register-form-phonebank') )
+		if ( ! isset( Input::get('register-form-phonebank') ) )
 		{
     		$phonebank = false;
     	}else
@@ -58,7 +58,7 @@ class UserController extends Controller
     		$phonebank = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-blockwalk') )
+		if ( ! isset( Input::get('register-form-blockwalk') ) )
 		{
     		$blockwalk = false;
     	}else
@@ -66,7 +66,7 @@ class UserController extends Controller
     		$blockwalk = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-othertask') )
+		if ( ! isset( Input::get('register-form-othertask') ) )
 		{
     		$othertask = false;
     	}else
@@ -74,7 +74,7 @@ class UserController extends Controller
     		$othertask = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-notask') )
+		if ( ! isset( Input::get('register-form-notask') ) )
 		{
     		$notask = false;
     	}else
