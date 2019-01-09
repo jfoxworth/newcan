@@ -50,7 +50,7 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		$fruits = array (
+		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
 			"lastname" => Input::get('register-form-lastname'),
 			"email"   => Input::get('register-form-email'),
@@ -64,9 +64,7 @@ class UserController extends Controller
 			"notask"   => Input::get('register-form-notask')
 		);
 
-		return validator(array( 'firstname'));
-		var_dump($thisItem = Input::get('register-form-firstname'));
-		return;
+		return validator( $regData );
 	}
 
 
