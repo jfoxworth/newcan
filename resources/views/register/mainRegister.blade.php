@@ -50,7 +50,7 @@
 							<div class="clear"></div>
 
 							<div class="col_half">
-								<label for="register-form-repassword">Zip Code:</label>
+								<label for="register-form-zipcode">Zip Code:</label>
 								<input type="text" id="register-form-zipcode" name="register-form-zipcode" value="" class="form-control" />
 							</div>
 
