@@ -50,7 +50,9 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		if ( ! isset( Input::get('register-form-phonebank') ) )
+		$data = Input::all();
+		
+		if ( ! isset( $data['register-form-phonebank'] ) )
 		{
     		$phonebank = false;
     	}else
