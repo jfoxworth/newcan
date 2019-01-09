@@ -121,15 +121,18 @@ class UserController extends Controller
 		$thisUser->firstname = Input::get('register-form-firstname');
 		$thisUser->lastname = Input::get('register-form-lastname');
 		$thisUser->email = Input::get('register-form-email');
+		$thisUser->password = 'password';
 		$thisUser->zipcode = Input::get('register-form-zipcode');
 		$thisUser->phone = Input::get('register-form-phone');
-		$thisUser->address = Input::get('register-form-address');
 		$thisUser->state = Input::get('register-form-state');
+		$thisUser->address = Input::get('register-form-address');
+		$thisUser->userinfo = '{}';
 		$thisUser->phonebank = $phonebank;
 		$thisUser->blockwalk = $blockwalk;
 		$thisUser->other = $othertask;
+		$thisUser->verified = 0;
+		$thisUser->fraud = 0;
 		$thisUser->save();
-
 
 
 		return; 
