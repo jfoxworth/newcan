@@ -23,7 +23,6 @@ class UserController extends Controller
 	 */
 	protected function validator(array $data)
 	{
-		var_dump($data);
 		return Validator::make($data, [
 			'firstname' => 'required|string|max:255',
 			'lastname' => 'required|string|max:255',
@@ -51,6 +50,38 @@ class UserController extends Controller
 	public function addme()
 	{
 
+		if ( ! isset( Input::get('register-form-phonebank') )
+		{
+    		$phonebank = false;
+    	}else
+    	{
+    		$phonebank = true;
+    	} 
+
+		if ( ! isset( Input::get('register-form-blockwalk') )
+		{
+    		$blockwalk = false;
+    	}else
+    	{
+    		$blockwalk = true;
+    	} 
+
+		if ( ! isset( Input::get('register-form-othertask') )
+		{
+    		$othertask = false;
+    	}else
+    	{
+    		$othertask = true;
+    	} 
+
+		if ( ! isset( Input::get('register-form-notask') )
+		{
+    		$notask = false;
+    	}else
+    	{
+    		$notask = true;
+    	} 
+
 
 		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
@@ -60,10 +91,9 @@ class UserController extends Controller
 			"address"   => Input::get('register-form-address'),
 			"zipcode"   => Input::get('register-form-zipcode'),
 			"state"   => Input::get('register-form-state'),
-			"phonebank"   => Input::get('register-form-phonebank'),
-			"blockwalk"   => Input::get('register-form-blockwalk'),
-			"othertask"   => Input::get('register-form-othertask'),
-			"notask"   => Input::get('register-form-notask')
+			"phonebank"   => $phonebank,
+			"blockwalk"   => $blockwalk,
+			"othertask"   => $othertask
 		);
 
 		$messages = [
@@ -84,7 +114,20 @@ class UserController extends Controller
 			'zipcode' => 'required|string|min:5|max:10'
 		], $messages)->validate();
 
-		echo('Here');
+
+		$thisUser = new User;
+		$thisUser->firstname = Input::get('register-form-firstname');
+		$thisUser->lastname = Input::get('register-form-lastname');
+		$thisUser->email = Input::get('register-form-email');
+		$thisUser->zipcode = Input::get('register-form-zipcode');
+		$thisUser->phone = Input::get('register-form-phone');
+		$thisUser->address = Input::get('register-form-address');
+		$thisUser->state = Input::get('register-form-state');
+		$thisUser->phonebank = $phonebank;
+		$thisUser->blockwalk = $blockwalk;
+		$thisUser->other = $othertask;
+		$thisUser->save();
+
 
 
 		return; 
