@@ -51,42 +51,42 @@ class UserController extends Controller
 	{
 
 		$data = Input::all();
-
-		var_dump($data);
-
-		return;
 		
 		if ( ! isset( $data['register-form-phonebank'] ) )
 		{
-    		$phonebank = false;
+    		$phonebank = 0;
     	}else
     	{
-    		$phonebank = true;
+    		$phonebank = 1;
     	} 
 
 		if ( ! isset( $data['register-form-blockwalk'] ) )
 		{
-    		$blockwalk = false;
+    		$blockwalk = 0;
     	}else
     	{
-    		$blockwalk = true;
+    		$blockwalk = 1;
     	} 
 
 		if ( ! isset( $data['register-form-othertask'] ) )
 		{
-    		$othertask = false;
+    		$othertask = 0;
     	}else
     	{
-    		$othertask = true;
+    		$othertask = 1;
     	} 
 
 		if ( ! isset( $data['register-form-notask'] ) )
 		{
-    		$notask = false;
+    		$notask = 0;
     	}else
     	{
-    		$notask = true;
+    		$notask = 1;
     	} 
+
+		echo($phonebank);
+
+    	return;
 
 
 		$regData = array (
