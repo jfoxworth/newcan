@@ -55,7 +55,7 @@ class UserController extends Controller
 		echo('--------');
 		echo(Input::get('register-form-phonebank'));
 		echo('--------');
-		echo(isset($data));
+		echo(is_null($data));
 		echo('--------');
 
 		if ( ! isset( $data['register-form-phonebank'] ) == 1 )
