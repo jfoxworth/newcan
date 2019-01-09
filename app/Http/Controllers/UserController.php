@@ -53,11 +53,11 @@ class UserController extends Controller
 		$data = Input::all();
 
 		echo('--------');
-		echo(Input::get('register-form-phonebank']));
+		echo(Input::get('register-form-phonebank'));
 		echo('--------');
-		echo(isset(Input::get('register-form-phonebank'])));
+		echo(isset(Input::get('register-form-phonebank')));
 		echo('--------');
-		echo(!isset(Input::get('register-form-phonebank'])));
+		echo(!isset(Input::get('register-form-phonebank')));
 		echo('--------');
 
 		if ( ! isset( $data['register-form-phonebank'] ) == 1 )
