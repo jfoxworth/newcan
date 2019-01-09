@@ -50,57 +50,6 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		$data = Input::get('register-form-phonebank');
-
-		echo('--------');
-		echo(Input::get('register-form-phonebank'));
-		echo('--------');
-		echo(is_null($data));
-		echo('--------');
-
-		if ( ! isset( $data['register-form-phonebank'] ) == 1 )
-		{
-    		$phonebank = 1;
-    	}else
-    	{
-    		$phonebank = 0;
-    	} 
-
-		if ( ! isset( $data['register-form-blockwalk'] ) == 1 )
-		{
-    		$blockwalk = 1;
-    	}else
-    	{
-    		$blockwalk = 0;
-    	} 
-
-		if ( ! isset( $data['register-form-othertask'] ) == 1 )
-		{
-    		$othertask = 1;
-    	}else
-    	{
-    		$othertask = 0;
-    	} 
-
-		if ( ! isset( $data['register-form-notask'] ) == 1 )
-		{
-    		$notask = 1;
-    	}else
-    	{
-    		$notask = 0;
-    	} 
-
-		echo('++++++++');
-		echo($phonebank);
-		echo('--------');
-		echo($blockwalk);
-		echo('--------');
-		echo($othertask);
-		echo('--------');
-
-    	return;
-
-
 		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
 			"lastname" => Input::get('register-form-lastname'),
@@ -109,9 +58,9 @@ class UserController extends Controller
 			"address"   => Input::get('register-form-address'),
 			"zipcode"   => Input::get('register-form-zipcode'),
 			"state"   => Input::get('register-form-state'),
-			"phonebank"   => $phonebank,
-			"blockwalk"   => $blockwalk,
-			"othertask"   => $othertask
+			"phonebank"   => Input::get('register-form-phonebank'),
+			"blockwalk"   => Input::get('register-form-blockwalk'),
+			"othertask"   => Input::get('register-form-othertask')
 		);
 
 		$messages = [

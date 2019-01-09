@@ -125,25 +125,33 @@
 
 							<h4>I am willing to ...</h4>
 
-							<div class="col_one_fourth">
+							<div class="col_one_third">
 								<label for="register-form-phonebank">Phone Bank:</label>
-								<input type="checkbox" id="register-form-phonebank" name="register-form-phonebank" value="" class="form-control" />
+								
+								<select id="register-form-phonebank" name="register-form-phonebank" value="" class="form-control">
+								  <option value="1">Yes</option>
+								  <option value="0">No</option>
+								</select>
 							</div>
 
-							<div class="col_one_fourth">
+							<div class="col_one_third">
 								<label for="register-form-blockwalk">Block Walk:</label>
-								<input type="checkbox" id="register-form-blockwalk" name="register-form-blockwalk" value="" class="form-control" />
+								
+								<select id="register-form-blockwalk" name="register-form-blockwalk" value="" class="form-control">
+								  <option value="1">Yes</option>
+								  <option value="0">No</option>
+								</select>
 							</div>
 
-							<div class="col_one_fourth">
+							<div class="col_one_third col_last">
 								<label for="register-form-othertask">Other:</label>
-								<input type="checkbox" id="register-form-othertask" name="register-form-othertask" value="" class="form-control" />
+								
+								<select id="register-form-othertask" name="register-form-othertask" value="" class="form-control">
+								  <option value="1">Yes</option>
+								  <option value="0">No</option>
+								</select>
 							</div>
 
-							<div class="col_one_fourth col_last">
-								<label for="register-form-phonebank">None:</label>
-								<input type="checkbox" id="register-form-notask" name="register-form-notask" value="" class="form-control" />
-							</div>
 
 
 							<div class="clear"></div>
