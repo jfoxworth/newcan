@@ -84,6 +84,8 @@ class UserController extends Controller
 			'zipcode' => 'required|string|min:5|max:10'
 		], $messages)->validate();
 
+		echo('Here');
+
 
 		return; 
 	}

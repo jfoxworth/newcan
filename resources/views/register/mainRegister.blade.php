@@ -18,6 +18,17 @@
 						<form id="register-form" name="register-form" class="nobottommargin" action="#" method="post">
 							@csrf
 
+
+							@if ($errors->any())
+							    <div class="alert alert-danger">
+							        <ul>
+							            @foreach ($errors->all() as $error)
+							                <li>{{ $error }}</li>
+							            @endforeach
+							        </ul>
+							    </div>
+							@endif
+
 							<div class="col_half">
 								<label for="register-form-name">First Name:</label>
 								<input type="text" id="register-form-firstname" name="register-form-firstname" value="" class="form-control" />
@@ -141,15 +152,6 @@
 								<button class="button button-3d button-black nomargin" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
 							</div>
 
-							@if ($errors->any())
-							    <div class="alert alert-danger">
-							        <ul>
-							            @foreach ($errors->all() as $error)
-							                <li>{{ $error }}</li>
-							            @endforeach
-							        </ul>
-							    </div>
-							@endif
 
 						</form>
 
