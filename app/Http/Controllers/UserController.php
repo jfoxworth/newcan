@@ -92,9 +92,9 @@ class UserController extends Controller
 		$thisUser->state = Input::get('register-form-state');
 		$thisUser->address = Input::get('register-form-address');
 		$thisUser->userinfo = '{}';
-		$thisUser->phonebank = $phonebank;
-		$thisUser->blockwalk = $blockwalk;
-		$thisUser->other = $othertask;
+		$thisUser->phonebank = Input::get('register-form-phonebank');
+		$thisUser->blockwalk = Input::get('register-form-blockwalk');
+		$thisUser->other = Input::get('register-form-othertask');
 		$thisUser->verified = 0;
 		$thisUser->fraud = 0;
 		$thisUser->save();
