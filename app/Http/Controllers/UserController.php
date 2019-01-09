@@ -135,7 +135,7 @@ class UserController extends Controller
 		$thisUser->save();
 
 
-		return; 
+		return redirect('/signupComplete');
 	}
 
 

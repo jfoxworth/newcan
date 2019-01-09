@@ -31,4 +31,9 @@ Route::get('/Register', function () {
 });
 
 
+Route::get('/signupComplete', function () {
+    return view('layouts.signupComplete');
+});
+
+
 Route::post('/JoinUs', 'UserController@addme');
