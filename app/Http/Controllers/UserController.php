@@ -60,12 +60,12 @@ class UserController extends Controller
 		echo(!isset($data['register-form-phonebank']));
 		echo('--------');
 
-		if ( ! isset( $data['register-form-phonebank'] ) )
+		if ( ! isset( $data['register-form-phonebank'] ) == 1 )
 		{
-    		$phonebank = 0;
+    		$phonebank = 1;
     	}else
     	{
-    		$phonebank = 1;
+    		$phonebank = 0;
     	} 
 
 		if ( ! isset( $data['register-form-blockwalk'] ) )
