@@ -50,14 +50,12 @@ class UserController extends Controller
 	public function addme()
 	{
 
-		$data = Input::all();
+		$data = Input::get('register-form-phonebank');
 
 		echo('--------');
 		echo(Input::get('register-form-phonebank'));
 		echo('--------');
-		echo(isset(Input::get('register-form-phonebank')));
-		echo('--------');
-		echo(!isset(Input::get('register-form-phonebank')));
+		echo(isset($data));
 		echo('--------');
 
 		if ( ! isset( $data['register-form-phonebank'] ) == 1 )
