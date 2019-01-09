@@ -54,7 +54,7 @@ class UserController extends Controller
 
 		var_dump($data);
 
-		return
+		return;
 		
 		if ( ! isset( $data['register-form-phonebank'] ) )
 		{
