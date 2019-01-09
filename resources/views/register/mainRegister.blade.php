@@ -141,6 +141,16 @@
 								<button class="button button-3d button-black nomargin" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
 							</div>
 
+							@if ($errors->any())
+							    <div class="alert alert-danger">
+							        <ul>
+							            @foreach ($errors->all() as $error)
+							                <li>{{ $error }}</li>
+							            @endforeach
+							        </ul>
+							    </div>
+							@endif
+
 						</form>
 
 					</div>
