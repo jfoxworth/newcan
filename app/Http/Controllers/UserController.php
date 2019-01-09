@@ -51,6 +51,10 @@ class UserController extends Controller
 	{
 
 		$data = Input::all();
+
+		var_dump($data);
+
+		return
 		
 		if ( ! isset( $data['register-form-phonebank'] ) )
 		{
