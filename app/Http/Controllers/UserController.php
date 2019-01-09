@@ -66,18 +66,7 @@ class UserController extends Controller
 			"notask"   => Input::get('register-form-notask')
 		);
 
-		$regData->validate([
-			'firstname' => 'required|string|max:255',
-			'lastname' => 'required|string|max:255',
-			'email' => 'required|string|email|max:255|unique:users',
-			'phone' => 'required|string|min:10',
-			'address' => 'required|string|max:255',
-			'state' => 'required|string|max:255',
-			'zipcode' => 'required|string|min:5|max:10'
-		]);
 
-
-		/*
 		Validator::make($regData, [
 			'firstname' => 'required|string|max:255',
 			'lastname' => 'required|string|max:255',
@@ -86,8 +75,7 @@ class UserController extends Controller
 			'address' => 'required|string|max:255',
 			'state' => 'required|string|max:255',
 			'zipcode' => 'required|string|min:5|max:10'
-		]);
-		*/
+		])->validate();
 
 
 		return; 
