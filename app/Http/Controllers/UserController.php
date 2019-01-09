@@ -51,6 +51,19 @@ class UserController extends Controller
 	public function addme()
 	{
 
+		var_dump(array (
+			"firstname"  => Input::get('register-form-firstname'),
+			"lastname" => Input::get('register-form-lastname'),
+			"email"   => Input::get('register-form-email'),
+			"phone"   => Input::get('register-form-phone'),
+			"address"   => Input::get('register-form-address'),
+			"zipcode"   => Input::get('register-form-zipcode'),
+			"state"   => Input::get('register-form-state'),
+			"phonebank"   => Input::get('register-form-phonebank'),
+			"blockwalk"   => Input::get('register-form-blockwalk'),
+			"othertask"   => Input::get('register-form-othertask'),
+			"notask"   => Input::get('register-form-notask'));
+
 		$regData = array (
 			"firstname"  => Input::get('register-form-firstname'),
 			"lastname" => Input::get('register-form-lastname'),
