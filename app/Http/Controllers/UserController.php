@@ -60,7 +60,7 @@ class UserController extends Controller
     		$phonebank = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-blockwalk') ) )
+		if ( ! isset( $data['register-form-blockwalk'] ) )
 		{
     		$blockwalk = false;
     	}else
@@ -68,7 +68,7 @@ class UserController extends Controller
     		$blockwalk = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-othertask') ) )
+		if ( ! isset( $data['register-form-othertask'] ) )
 		{
     		$othertask = false;
     	}else
@@ -76,7 +76,7 @@ class UserController extends Controller
     		$othertask = true;
     	} 
 
-		if ( ! isset( Input::get('register-form-notask') ) )
+		if ( ! isset( $data['register-form-notask'] ) )
 		{
     		$notask = false;
     	}else
