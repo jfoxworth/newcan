@@ -38,13 +38,13 @@
 
 		@include('landing.whoweare')
 
-		@include('landing.jefferson')
+		@include('landing.reformBreak')
 
 		@include('landing.coreIssues')
 
 		@include('landing.overview')
 
-		@include('landing.HowItWorks')
+		@include('landing.addYourName')
 
 		@include('landing.userBreak')
 
