@@ -83,7 +83,7 @@
 							<!-- Entry Title
 							============================================= -->
 							<div class="entry-title topmargin-lg bottommargin-sm">
-								<h2 id="Platform">Republican Platform - 1st, 2nd Amendments</h2>
+								<h2 id="Platform">Restoration of Rights</h2>
 							</div><!-- .entry-title end -->
 
 
@@ -91,9 +91,15 @@
 							============================================= -->
 							<div class="entry-content notopmargin">
 
-								<p>While we focus on immigration and affirmative action, we will not support candidates that are otherwise opposed to the remainder of the Republican platform. We will not support a candidate that opposes second amendment rights or the current assault against the first amendment. We will not support a candidate that accepts the deplatforming of right wing views from social media.</p>
+								<p>Enforcing US immigration laws will go a long with in the fight to restore rights to citizens as it will eliminate the disenfranchisement every citizen now faces. In addition to this, we will work to remove the foreign influences from our political discourse and our elections.</p>
 
-								<p>While we have strong views on the remainder of the Republican platform, minor differences on most issues will not be a problem for a candidate seeking our assistance.</p>
+								<p>The primary method used by foreign nations to influence our political discourse is the control over our news, social media, and payment processors. This allows the governments of hostile nations to promote their own views under the guise of "news", to supress views and punish nationalists by denying them access to the public square and cutting off their ability to support themselves financially.</p>
+
+								<p>We will push legislation making it illegal for the citizen of any foreign nation to have ownership or employment at any instition that broadcasts as "news" in the US. To do anything else is to not only allow the propaganda of hostile nations, but to certify it as fact.</p>
+
+								<p>We will then prohibit any company from doing business in the US if they do not recognize the free speech and financial freedom of our citizens. No business that operates in the US as social media or as a payment processor can deny someone based upon political views. Period.</p>
+
+								<p>Finally, we will end the TSA and restore the 4th amendment.</p>
 
 							</div>
 
