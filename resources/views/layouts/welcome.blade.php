@@ -44,8 +44,6 @@
 
 		@include('landing.overview')
 
-		@include('landing.addYourName')
-
 		@include('landing.userBreak')
 
 		@include('footer')
