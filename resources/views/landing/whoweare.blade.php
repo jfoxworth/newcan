@@ -18,7 +18,7 @@
 						<a href="#"><i class="icon-et-globe"></i></a>
 					</div>
 					<h4>Republican Party Members</h4>
-					<p>We are a group of traditional Republicans with mainstream views. We have been precinct chairs, poll workers, and just regular conservative voters. We elected representatives who promised to fulfill the party platform.</p>
+					<p>We are a group of traditional Republicans. We have been precinct chairs, poll workers, and just regular conservative voters. We elected representatives who promised to fulfill the party platform.</p>
 				</div>
 			</div>
 
